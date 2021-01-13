@@ -1,4 +1,4 @@
-# Introduction to Docker 
+# Manage Linux Containers with Docker
 
 ## Course Content
 [Slides](http://bit.ly/docker-fun-slides)  
@@ -12,12 +12,16 @@ To access the lab servers please follow the [Setup Guide](labs/setup-env/)
 ## Labs
 
 ### Day 1
-Lab 4: [Images](labs/04-images/)  
-Lab 5: [Networking](labs/05-networking/)  
+Lab 1: [cgroup-namespaces](labs/cgroups-namespaces/)  
+Lab 2: [union-filesystem](labs/union-filesystem/)  
+Lab 3: [manually build image](labs/images/manual)  
+Lab 4: [automate image build](labs/images/automate)  
+Lab 5: [advanced dockerfiles](labs/builds/)  
 
 ### Day 2
-Lab 6: [Volumes](labs/06-volumes/)  
-Lab 7: [Compose](labs/07-compose/07_orchestration_compose_lab1.md)  
-Lab 8: [Swarm](labs/08-swarm/08_swarm_cluster_lab1.md)  
-Lab 9: [Capstone](labs/09-capstone/capstone.md)  
+Lab 6: [security](labs/security/)  
+Lab 7: [private registry](labs/registry/)  
+Lab 8: [networking](labs/networks/)  
+Lab 9: [api](labs/api/)  
+Lab 10: [swarmn](labs/orchestration/)  
 
