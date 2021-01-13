@@ -11,7 +11,7 @@ chmod 600 /path/to/lab
 ### SSH to lab servers 
 The username for SSH is `ubuntu`
 ```
-ssh -i /path/to/lab root@<LAB IP> 
+ssh -i /path/to/lab ubuntu@<LAB IP> 
 ```
 
 
