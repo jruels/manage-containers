@@ -3,7 +3,7 @@
 ## Course Content
 [Slides](http://bit.ly/docker-fun-slides)  
 
-## lab VMs
+## Lab VMs
 [VM Sheet](http://bit.ly/docker-fun-labs)
 
 To access the lab servers please follow the [Setup Guide](labs/setup-env/)
@@ -23,5 +23,5 @@ Lab 6: [security](labs/security/)
 Lab 7: [private registry](labs/registry/)  
 Lab 8: [networking](labs/networks/)  
 Lab 9: [api](labs/api/)  
-Lab 10: [swarmn](labs/orchestration/)  
+Lab 10: [swarm](labs/orchestration/)  
 
