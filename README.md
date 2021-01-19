@@ -2,6 +2,7 @@
 
 ## Course Content
 [Slides](http://bit.ly/docker-fun-slides)  
+[Day 1 Slides](https://www.dropbox.com/s/peem2322siv7p3x/Manage%20Linux%20Containers%20Day1.pdf?dl=0)
 
 ## Lab VMs
 [VM Sheet](http://bit.ly/docker-fun-labs)
