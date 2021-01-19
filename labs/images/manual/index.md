@@ -26,43 +26,27 @@ Here you can see all the information about this repository. Next, click on the T
 This tab shows a list of all the images that have been tagged in this repository.
 
 6. 
-Using the Search function, locate the list of nginx repositories. Select the webdevops/nginx repo to see more details.
+Using the Search function, locate the list of nginx repositories. Select official nginx repo to see more details.
 
 7. 
-Select the Dockerfile tab to view the Dockerfile for this build.
+Under the description you will see links to the maintainers and GitHub repository to file issues.
+
 
 8. 
-This is where the information about the base image and repository maintainer is located, as well as the build code.
-
-9. 
 You can also search for an image using the CLI. From a command line running Docker, enter
 
-docker search wordpress. This will list all of the repositories within Docker Hub without having to go through the web browser.
+`docker search wordpress`. This will list all of the repositories within Docker Hub without having to go through the web browser.
 
 ### 2. Deploy WordPress All-In-One and the WordPress CLI
 Step by Step Guide
 1. 
-Locate the IP address of the Master machine within the lab folder.
-
-2. 
-If on a Mac, or using Linux:
-
-In a command line, enter
-
-`ssh -i </Users/…/>docker.pem ubuntu@<IP>`
-
-The .pem file will be provided by the instructor for this lab. This command will connect the console to the Docker machine.
-
-
-_If using Windows: Open Putty and connect to the session you saved earlier_
-3. 
 In the command line, enter the following command to deploy the WordPress All-In-One container. In the following steps, this WordPress all-in-one will receive a WordPress tool called the "WordPress CLI." This tools allows WordPress administrators to interact with their WordPress deployment using the command-line.
 
 `docker run -d -P --name wpaio s5atrain/wordpress:aio`
 
 The last line of output will be a container ID.
 
-4. 
+2. 
 Run the following command to validate that WordPress CLI is not installed.
 
 `docker exec wpaio wp theme list --allow-root --path=’/var/www/html’`
@@ -71,7 +55,7 @@ The output will contain an error message. This is because the WordPress CLI is n
 ```
 OCI runtime exec failed: exec failed: container_linux.go:348: starting container process caused "exec: \"wp\": executable file not found in $PATH": unknown
 ```
-5. 
+3. 
 Run the docker port command to get the mapped ports of the WordPress all-in-one container.
 
 `docker port wpaio`
@@ -81,10 +65,10 @@ Two ports will be listed as the output:
 3306/tcp -> 0.0.0.0:32769  
 80/tcp -> 0.0.0.0:32770  
 ```
-6. 
+4. 
 In a web browser, navigate to http:`<IP_Address>`:port using the local host IP address of your machine and the port mapped to 80/tcp from the previous step (i.e. 32770).
 
-7. 
+5. 
 Configure WordPress with the following credentials:
 
 `Username: root`
@@ -93,12 +77,12 @@ Configure WordPress with the following credentials:
 
 _You will get a warning about a weak password, you would never use a root user and password in anything production but it will work for this short class_
 
-8. 
+6. 
 Use the docker exec command to gain remote access to the WordPress container and run some configuration commands.
 
 `docker exec -it wpaio /bin/bash`
 
-9. 
+7. 
 Once inside the WordPress container, enter the following commands in following sequence to install the WordPress CLI tool.
 
 ````
@@ -130,7 +114,7 @@ No value for $TERM and no -T specified
 | twentytwelve   | inactive | available | 1.9     |
 +----------------+----------+-----------+---------+
 ```
-10. 
+8. 
 Now exit the WordPress container:
 
 `exit`
