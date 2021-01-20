@@ -2,6 +2,7 @@
 
 ## Course Content
 [Day 1 Slides](https://www.dropbox.com/s/peem2322siv7p3x/Manage%20Linux%20Containers%20Day1.pdf?dl=0)
+[Day 2 Slides](https://www.dropbox.com/s/98j7qvl44ozdtgj/Manage%20Linux%20Containers%20Day2.pdf?dl=0)
 
 ## Lab VMs
 [VM Sheet](https://docs.google.com/spreadsheets/d/14DJvjdQS6f3sm6lSw3Gj8ioadjHv-3hSs2hsH7Ddxt0/edit#gid=2116149916)
